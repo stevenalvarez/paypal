@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    	
+        <title>Patrocinalos</title>
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+    	<link rel="stylesheet" href="css/main.css" />
+    	
+        <script src="js/jquery-1.8.2.js"></script>
+        <script src="js/jquery.mobile-1.3.0.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/main.js"></script>
+        
+    </head>
+    <body>
+    
+    <!-- FORMULARIO DE CONTACTO -->
+    
+    <div data-role="page" id="formulario_contacto" data-theme="t">
+    
+    	<div data-role="header" data-tap-toggle="false" data-theme="t" class="header_internal">
+            <a class="volver" href="#" data-role="button" data-iconpos="notext">Volver</a>
+            <a class="info" href="#info" data-role="button" data-iconpos="notext">Info</a>
+    	</div><!-- /header -->
+    
+    	<div data-role="content">
+            <form id="form_contact" name="form_contact">
+                <div class="content_top">
+                    <h1 class="page_custom">Formulario</h1>
+                </div>
+                <div class="content_middle">
+                    <div class="container_form">
+                        <label for="form_nombre">Nombre:<span> *</span></label>
+                        <input type="text" name="name" id="form_nombre" value="" data-mini="true" />
+                        <label for="form_nombre">Telefono:</label>
+                        <input type="text" name="phone" id="form_telefono" value="" data-mini="true" />
+                        <label for="form_nombre">Email:<span> *</span></label>
+                        <input type="text" name="email" id="form_email" value="" data-mini="true" />
+                        <label for="textarea">Mensaje:<span> *</span></label>
+                        <textarea name="mensaje" id="textarea"></textarea>
+                    </div>
+                    <div class="options">
+                        <a id="enviar_form" class="enviar" style="display: inline-block;" href="javascript:void(0)" data-role="button">Enviar</a>
+                    </div>
+                </div>
+            </form>
+    	</div><!-- /content -->
+    
+    	<div data-role="footer" data-tap-toggle="false" data-theme="a">
+    	</div><!-- /footer -->
+    
+    </div><!-- /page -->
+    
+    </body>
+</html>
