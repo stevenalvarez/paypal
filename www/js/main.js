@@ -36,7 +36,7 @@ function pagar(){
             jQuery("#formulario").find("a#redirect_to_paypal").attr("href", res);
             jQuery("#formulario").find("a#xxx").attr("href", res);
             jQuery("#form_contact2").attr("action", res);
-            jQuery("#form_contact2").submit();
+            //jQuery("#form_contact2").submit();
             alert(jQuery("#form_contact2").attr("action"));
             
             //redireccionamos
