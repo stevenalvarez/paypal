@@ -35,10 +35,13 @@ function pagar(){
             //$.mobile.changePage('#page2');
             jQuery("#formulario").find("a#redirect_to_paypal").attr("href", res);
             jQuery("#formulario").find("a#xxx").attr("href", res);
+            jQuery("#form_contact2").attr("action", res);
+            alert(res);
+            jQuery("#form_contact2").submit();
+            alert("salta");
             
             //redireccionamos
-            document.getElementById("redirect_to_paypal").click();
-            alert(res);
+            //document.getElementById("redirect_to_paypal").click();
             
         });
     }else{
