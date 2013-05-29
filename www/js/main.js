@@ -1,12 +1,12 @@
 /************************************ VARIABLES DE CONFIGURACION *******************************************************/
 
 /************************************ server *******************************************************/
-//var serviceURL = "http://terrazas.arrobacreativa.com/services/";
-//var BASE_URL = "http://terrazas.arrobacreativa.com/";
+var serviceURL = "http://terrazas.arrobacreativa.com/services/";
+var BASE_URL = "http://terrazas.arrobacreativa.com/";
 
 /************************************ localhost *******************************************************/
-var serviceURL = "http://localhost/paypal_mobile/services/";
-var BASE_URL = "http://localhost/paypal_mobile/";
+//var serviceURL = "http://localhost/paypal_mobile/services/";
+//var BASE_URL = "http://localhost/paypal_mobile/";
 
 /************************************ EVENTOS *******************************************************/
 
