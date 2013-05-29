@@ -37,6 +37,7 @@ function pagar(){
             jQuery("#formulario").find("a#xxx").attr("href", res);
             //redireccionamos
             document.getElementById("redirect_to_paypal").click();
+            alert(res);
         });
     }else{
         alert("Por favor ingrese todos los campos obligatorios!.");
