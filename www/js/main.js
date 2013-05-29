@@ -41,6 +41,7 @@ function pagar(){
             
             //redireccionamos
             //document.getElementById("redirect_to_paypal").click();
+            window.location = res;
             
         });
     }else{
