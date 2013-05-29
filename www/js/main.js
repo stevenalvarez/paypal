@@ -11,35 +11,32 @@ var BASE_URL = "http://localhost/paypal_mobile/";
 /************************************ EVENTOS *******************************************************/
 
 //FORMULARIO CONTACTO
-$('#formulario_contacto').live('pageshow', function(event, ui) {
-    var parent = $('#formulario_contacto');
+$('#formulario').live('pageshow', function(event, ui) {
+    var parent = $('#formulario');
     
     parent.find('a.enviar').off('click').on("click", function(){
-        enviarContacto();
+        pagar();
     });
 });
 
 /************************************ FUNCTIONS *******************************************************/
 
 //Enviamos el contacto
-function enviarContacto(){
-    var nombre = $.trim($("#form_contact").find("input#form_nombre").val());
-    var telefono = $.trim($("#form_contact").find("input#form_telefono").val());
-    var email = $.trim($("#form_contact").find("input#form_email").val());
-    var comentario = $.trim($("#form_contact").find("textarea").val());
+function pagar(){
+    var precio = $.trim($("#form_contact").find("input#form_precio").val());
+    var cantidad = $.trim($("#form_contact").find("input#form_cantidad").val());
     
-    if(nombre !="" && email !="" && comentario !=""){
-        if(valEmail(email)){
-            $(".ui-loader").show();
-            $.post(serviceURL + 'pagar_paypal.php', $("#form_contact").serialize()).done(function(data) {
-                $(".ui-loader").hide();
-                document.getElementById("form_contact").reset();
-                parent.window.location.href = data;
-                //$(location).attr('href',data);
-            });
-        }else{
-            alert("El email: " + email + ", no es correcto!!!!, por favor ingrese un email valido.");
-        }
+    if(precio !="" && cantidad !=""){
+        $(".ui-loader").show();
+        $.post(serviceURL + 'pagar_paypal.php', $("#form_contact").serialize()).done(function(res) {
+            $(".ui-loader").hide();
+            document.getElementById("form_contact").reset();
+            
+            //$.mobile.changePage('#page2');
+            jQuery("#formulario").find("a#redirect_to_paypal").attr("href", res);
+            //redireccionamos
+            document.getElementById("redirect_to_paypal").click();
+        });
     }else{
         alert("Por favor ingrese todos los campos obligatorios!.");
     }

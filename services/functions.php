@@ -228,14 +228,14 @@
         $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         
         // Cabeceras adicionales
-        $cabeceras .= 'To: Las terrazas <contacto@lasterrazasdebecerril.es>' . "\r\n";
+        $cabeceras .= 'To: Jhonny  <steven.alvarez.v@gmail.com>' . "\r\n";
         $cabeceras .= 'From: ' . $email . "\r\n";
         $subject = 'Contacto - ' . $name;
         //$cabeceras .= 'Cc: test@example.com' . "\r\n";
         //$cabeceras .= 'Bcc: test@example.com' . "\r\n";
         // Mail it
         
-        return mail('contacto@lasterrazasdebecerril.es', $subject, $mensaje, $cabeceras);
+        return mail('steven.alvarez.v@gmail.com', $subject, $mensaje, $cabeceras);
     }
     
 ?>

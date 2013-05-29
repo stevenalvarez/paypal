@@ -20,13 +20,8 @@
     
     <!-- FORMULARIO DE CONTACTO -->
     
-    <div data-role="page" id="formulario_contacto" data-theme="t">
-    
-    	<div data-role="header" data-tap-toggle="false" data-theme="t" class="header_internal">
-            <a class="volver" href="#" data-role="button" data-iconpos="notext">Volver</a>
-            <a class="info" href="#info" data-role="button" data-iconpos="notext">Info</a>
-    	</div><!-- /header -->
-    
+    <div data-role="page" id="formulario" data-theme="t">
+        
     	<div data-role="content">
             <form id="form_contact" name="form_contact">
                 <div class="content_top">
@@ -34,26 +29,25 @@
                 </div>
                 <div class="content_middle">
                     <div class="container_form">
-                        <label for="form_nombre">Nombre:<span> *</span></label>
-                        <input type="text" name="name" id="form_nombre" value="" data-mini="true" />
-                        <label for="form_nombre">Telefono:</label>
-                        <input type="text" name="phone" id="form_telefono" value="" data-mini="true" />
-                        <label for="form_nombre">Email:<span> *</span></label>
-                        <input type="text" name="email" id="form_email" value="" data-mini="true" />
-                        <label for="textarea">Mensaje:<span> *</span></label>
-                        <textarea name="mensaje" id="textarea"></textarea>
+                        <label for="form_nombre">Precio:<span> *</span></label>
+                        <input type="text" name="precio" id="form_precio" value="" data-mini="true" />
+                        <label for="form_nombre">Cantidad:<span> *</span></label>
+                        <input type="text" name="cantidad" id="form_cantidad" value="1" data-mini="true" readonly="readonly" />
                     </div>
                     <div class="options">
                         <a id="enviar_form" class="enviar" style="display: inline-block;" href="javascript:void(0)" data-role="button">Enviar</a>
                     </div>
                 </div>
             </form>
+            
+            <a style="display: none;" id="redirect_to_paypal" href="#" target="_blank" data-role="button" data-icon="none" data-iconpos="right">Redirect to paypal</a>
+            
     	</div><!-- /content -->
     
     	<div data-role="footer" data-tap-toggle="false" data-theme="a">
     	</div><!-- /footer -->
-    
-    </div><!-- /page -->
+        
+     </div><!-- /page -->
     
     </body>
 </html>
