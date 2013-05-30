@@ -35,8 +35,8 @@ function pagar(){
             //$.mobile.changePage('#page2');
             //jQuery("#formulario").find("a#redirect_to_paypal").attr("href", res);
             //REDIRECCIONAMOS AL PAYPAL
+            //console.log(res);
             window.location = res;
-            
         });
     }else{
         alert("Por favor ingrese todos los campos obligatorios!.");
