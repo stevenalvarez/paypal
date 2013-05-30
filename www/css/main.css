@@ -66,7 +66,7 @@ h4.page_custom{
 
 /* content */
 .ui-page{
-    background: url("../img/bg_wrapper.jpg") repeat-x scroll 0 0 transparent;
+    background: red;
     overflow: hidden;
 }
 .ui-content{
