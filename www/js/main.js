@@ -1,8 +1,8 @@
 /************************************ VARIABLES DE CONFIGURACION *******************************************************/
 
 /************************************ server *******************************************************/
-var serviceURL = "http://terrazas.arrobacreativa.com/services/";
-var BASE_URL = "http://terrazas.arrobacreativa.com/";
+var serviceURL = "http://patrocinalos.com/services/";
+var BASE_URL = "http://patrocinalos.com/";
 
 /************************************ localhost *******************************************************/
 //var serviceURL = "http://localhost/paypal_mobile/services/";
