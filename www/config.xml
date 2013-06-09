@@ -5,13 +5,13 @@
     versionCode = "1"
 	version 	= "1.0.0">
 
-	<name>Patrocinalos</name>
+	<name>PayPal</name>
 
 	<description>
-		Aplicacion mobile PATROCINALOS
+		Aplicacion de prueba PayPal
 	</description>
 
-	<author href="http://patrocinalos.com"
+	<author href="http://sysdecom.com"
 		email="steven.alvarez.v@gmail.com">
 		SYSDECOM
 	</author>
