@@ -37,10 +37,8 @@ function pagar(){
             //REDIRECCIONAMOS AL PAYPAL
             //console.log(res);
             //window.location = res;
-            alert(res);
-            window.plugins.childBrowser.showWebPage('http://www.google.com',{ showLocationBar: true });
-			//window.plugins.childBrowser.showWebPage(res, { showLocationBar : false }); // This opens the Twitter authorization / sign in page
-			//window.plugins.childBrowser.onLocationChange = function(loc){ locationChange(loc); }; // When the ChildBrowser URL changes we need to track that
+			window.plugins.childBrowser.showWebPage(res, { showLocationBar : true }); // This opens the Twitter authorization / sign in page
+			window.plugins.childBrowser.onLocationChange = function(loc){ locationChange(loc); }; // When the ChildBrowser URL changes we need to track that
         });
     }else{
         alert("Por favor ingrese todos los campos obligatorios!.");
