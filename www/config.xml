@@ -52,6 +52,9 @@
     <icon src="icono.png" gap:platform="ios" width="72" height="72" />
     <icon src="icono.png" gap:platform="ios" width="114" height="114" />
     
+    <!-- ChildBrowser -->
+    <gap:plugin name="com.phonegap.plugins.childbrowser" />
+    
 	<feature name="http://api.phonegap.com/1.0/battery"/>
     <feature name="http://api.phonegap.com/1.0/camera"/>
     <feature name="http://api.phonegap.com/1.0/contacts"/>
